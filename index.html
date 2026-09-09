@@ -574,7 +574,11 @@
     
 <div class="media-row">
       <div class="media-slot">
-        <div class="media-frame" id="video1Frame"></div> 
+        <div class="media-frame" style="display: flex; align-items: center; justify-content: center; background: #f8f9fa; border: 1px solid #ddd; text-align: center; padding: 20px;">
+  <a href="https://www.youtube.com/watch?v=pELIWVzDVAA&t=24s" target="_blank" style="text-decoration: underline; font-size: 16px; font-weight: bold; color: #0066cc;">
+    Πατήστε εδώ για να δείτε το βίντεο 17 Νοέμβρη 1973 - Η εξέγερση του Πολυτεχνείου (Αφιέρωμα - Παρουσίαση)
+  </a>
+</div> 
 
     <p class="photo-credit">17 Νοέμβρη 1973 - Η εξέγερση του Πολυτεχνείου (Αφιέρωμα - Παρουσίαση)</p>
       </div>
@@ -586,7 +590,7 @@
     Πατήστε εδώ για να δείτε ΤΟ ΧΡΟΝΙΚΟ ΤΗΣ ΕΞΕΓΕΡΣΗΣ ΤΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ
   </a>
 </div>
-        <p class="photo-credit">Βίντεο 2</p>
+        <p class="photo-credit">Ο ΧΡΟΝΙΚΟ ΤΗΣ ΕΞΕΓΕΡΣΗΣ ΤΟΥ ΠΟΛΥΤΕΧΝΕΙΟΥ</p>
       </div>
     </div>
     
@@ -598,11 +602,19 @@
     <h2>Δύο τραγούδια</h2>
     <div class="media-row">
       <div class="media-slot">
-        <div class="media-frame" id="song1Frame"></div>
+        <div class="media-frame" style="display: flex; align-items: center; justify-content: center; background: #f8f9fa; border: 1px solid #ddd; text-align: center; padding: 20px;">
+  <a href="https://www.youtube.com/watch?v=5nqRJHEEPeE&list=RD5nqRJHEEPeE&start_radio=1" target="_blank" style="text-decoration: underline; font-size: 16px; font-weight: bold; color: #0066cc;">
+    Πατήστε εδώ για να ακούσετε το τραγούδι Ο ΔΡΟΜΟΣ
+  </a>
+</div>
         <p class="photo-credit">Ο ΔΡΟΜΟΣ</p>
       </div>
       <div class="media-slot">
-        <div class="media-frame" id="song2Frame"></div>
+        <div class="media-frame" style="display: flex; align-items: center; justify-content: center; background: #f8f9fa; border: 1px solid #ddd; text-align: center; padding: 20px;">
+  <a href="https://www.youtube.com/watch?v=VTReB0eakWQ&list=RDVTReB0eakWQ&start_radio=1" target="_blank" style="text-decoration: underline; font-size: 16px; font-weight: bold; color: #0066cc;">
+    Πατήστε εδώ για να ακούσετε το τραγούδι ΕΝΑ ΤΟ ΧΕΛΙΔΟΝΙ
+  </a>
+</div>
         <p class="photo-credit">ΕΝΑ ΤΟ ΧΕΛΙΔΟΝΙ</p>
       </div>
     </div>
@@ -708,10 +720,10 @@
   // Παράδειγμα Spotify:  "https://open.spotify.com/track/XXXXXXXXXXXXXXXXXXXXXX"
   // ============================================================
   const MEDIA_LINKS = {
-    video1: "media/1.αφιερωμα παρουσιαση 17νεομ.mp4",
+    <!-- video1: "media/1.αφιερωμα παρουσιαση 17νεομ.mp4",-->
     <!-- video2: "https://www.youtube.com/embed/2KyP7qwp4j4?start=973&autoplay=1&mute=1", -->
-    song1:  "media/3.Ο Δρόμος.mp4",
-    song2:  "media/4.Ένα το Χελιδόνι - Μίκης Θεοδωράκης.mp4",
+    <!-- song1:  "media/3.Ο Δρόμος.mp4",-->
+    <!-- song2:  "media/4.Ένα το Χελιδόνι - Μίκης Θεοδωράκης.mp4",-->
   };
 
   function parseMediaLink(url){
@@ -762,10 +774,10 @@
     frame.appendChild(iframe);
   }
 
-  renderMediaSlot('video1Frame', MEDIA_LINKS.video1, 'Βίντεο 1');
+  <!--renderMediaSlot('video1Frame', MEDIA_LINKS.video1, 'Βίντεο 1');-->
   <!-- renderMediaSlot('video2Frame', MEDIA_LINKS.video2, 'Βίντεο 2'); -->
-  renderMediaSlot('song1Frame', MEDIA_LINKS.song1, 'Τραγούδι 1');
-  renderMediaSlot('song2Frame', MEDIA_LINKS.song2, 'Τραγούδι 2');
+  <!--renderMediaSlot('song1Frame', MEDIA_LINKS.song1, 'Τραγούδι 1');-->
+  <!--renderMediaSlot('song2Frame', MEDIA_LINKS.song2, 'Τραγούδι 2');-->
 
   const screens = Array.from(document.querySelectorAll('[data-screen]'));
   const dotsWrap = document.getElementById('dots');
